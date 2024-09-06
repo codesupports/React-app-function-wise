@@ -11,17 +11,51 @@
   will-change: filter;
   transition: filter 300ms;
 }
+
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
+
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+/*counter css*/
+.counter-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.counter-container button, .button-black {
+  border: 2px solid rgb(100, 100, 100);
+  background-color: black;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  cursor: pointer;
+}
+
+.counter-container button:hover {
+  background-color: rgb(40, 39, 39);
+}
+
+/*input component css*/
+.input-component{
+  border: 0.1rem solid #6f6f6f;
+  background-color: #1e1e1e;
+  border-radius: 0.5rem;
+  line-height: 2rem;
+  font-size: 1rem;
+  color: aliceblue;
 }
 
 @keyframes logo-spin {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
