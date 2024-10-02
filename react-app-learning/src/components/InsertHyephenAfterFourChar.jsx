@@ -2,7 +2,6 @@ import { useEffect, useState } from 'react';
 
 function InsertHyephenAfterFourChar() {
   const [inputValue, setInputValue] = useState('');
-  let result = [];
 
   const formatCardNumber = (value) => {
     const groups = [];
@@ -15,12 +14,13 @@ function InsertHyephenAfterFourChar() {
   const handleChange = (e) => {
     const input = e.target.value.replace(/\D/g, ''); // Remove non-digit characters Like
     const formattedInput = formatCardNumber(input);
-    setInputValue(formattedInput.trim());
+    setInputValue(formattedInput.trim().slice(0,-1));
   };
 
   return (
     <>
-      {inputValue}
+    <h3>Insert Hyephen after every 4 charactor enter in input: ⬇️</h3>
+      <p>{inputValue}</p>
       <input
         type="text"
         value={inputValue}

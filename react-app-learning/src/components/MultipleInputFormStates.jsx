@@ -34,6 +34,7 @@ const MultipleInputFormStates = () => {
     console.log(response)
     return (
         <>
+        <h3>Multiple input field handle with one state: ⬇️</h3>
             <form onSubmit={onSubmit}>
                 <div className='form-control'>
 
