@@ -4,6 +4,7 @@ import { useState } from 'react'
 import './App.css'
 import Counter from './components/Counter'
 import Input from './components/Input'
+import Navbar from './Navbar/Navbar'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -13,6 +14,7 @@ function App() {
       <div>
         <Counter />
         <Input />
+        <Navbar />
       </div>
     </>
   )
