@@ -77,3 +77,14 @@
 .read-the-docs {
   color: #888;
 }
+.form-control{
+  border: 1px solid #fff;
+  display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 8px;
+    
+}
+.form-control div{
+  grid-column: span 3 / span 3;
+}
+.form-control div label{padding-right: 10px;}

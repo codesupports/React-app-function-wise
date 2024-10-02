@@ -5,6 +5,7 @@ import './App.css'
 import Counter from './components/Counter'
 import Input from './components/Input'
 import Navbar from './Navbar/Navbar'
+import MultipleInputFormStates from './components/MultipleInputFormStates'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -15,6 +16,7 @@ function App() {
         <Counter />
         <Input />
         <Navbar />
+        <MultipleInputFormStates />
       </div>
     </>
   )
