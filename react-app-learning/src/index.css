@@ -28,6 +28,10 @@ body {
   padding: 0;
 }
 
+ul li {
+  list-style-type: none;
+}
+
 input[type="text"],
 input[type="email"],
 input[type="number"],
@@ -39,6 +43,7 @@ input[type="password"] {
 
 .navigation-main ul {
   display: flex;
+  flex-wrap: wrap;
   gap: 10px;
   justify-content: center;
   padding-bottom: 20px;
@@ -48,6 +53,7 @@ input[type="password"] {
 
 .navigation-main ul li {
   list-style-type: none;
+  margin-bottom: 5px;
 }
 
 .navigation-main ul li a {
@@ -74,4 +80,25 @@ input[type="password"] {
 
 .startRating .active {
   color: #e78e00;
+}
+
+.nBtn {
+  padding: 5px 10px;
+}
+
+.modal-overlay {
+  background-color: #7b070750;
+  position: fixed;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-overlay .modal {
+  background-color: #fff;
+  width: 350px;
+  color: #000;
+  border-radius: 20px;
+  padding: 20px;
 }

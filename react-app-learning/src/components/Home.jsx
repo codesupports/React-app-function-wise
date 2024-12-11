@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Counter from './Counter'
 import Input from './Input'
 import Navbar from '../Navbar/Navbar'
@@ -7,9 +7,16 @@ import InsertHyephenAfterFourChar from './InsertHyephenAfterFourChar'
 import StarRating from './StarRating'
 
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
+import PaginatedList from './PaginatedList'
+import Modal from './Modal'
+
 
 
 const Home = () => {
+    const [isModalOpen, setModalOpen] = useState(false);
+
+    const openModal = () => setModalOpen(true);
+    const closeModal = () => setModalOpen(false);
     return (
         <div>
 
@@ -36,6 +43,10 @@ const Home = () => {
                             <li>
                                 <Link to="/StarRating">Star Rating</Link>
                             </li>
+                            <li>
+                                <Link to="/PaginatedList">PaginatedList </Link>
+                            </li>
+                            <li><Link to="/ModalPopup" onClick={openModal}>Modal Popup </Link></li>
                         </ul>
                     </nav>
 
@@ -47,6 +58,9 @@ const Home = () => {
                         <Route path="/MultipleInputFormStates" element={<MultipleInputFormStates />} />
                         <Route path="/InsertHyephenAfterFourChar" element={<InsertHyephenAfterFourChar />} />
                         <Route path="/StarRating" element={<StarRating />} />
+                        <Route path="/PaginatedList" element={<PaginatedList />} />
+                        <Route path="/ModalPopup" element={<Modal isOpen={isModalOpen} onClose={closeModal} />} />
+
 
                     </Routes>
                 </div>
