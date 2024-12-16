@@ -9,6 +9,7 @@ import StarRating from './StarRating'
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import PaginatedList from './PaginatedList'
 import Modal from './Modal'
+import ApiCall from './ApiCall'
 
 
 
@@ -47,6 +48,8 @@ const Home = () => {
                                 <Link to="/PaginatedList">PaginatedList </Link>
                             </li>
                             <li><Link to="/ModalPopup" onClick={openModal}>Modal Popup </Link></li>
+                            <li><Link to="/ApiCall" >ApiCall </Link></li>
+
                         </ul>
                     </nav>
 
@@ -60,6 +63,8 @@ const Home = () => {
                         <Route path="/StarRating" element={<StarRating />} />
                         <Route path="/PaginatedList" element={<PaginatedList />} />
                         <Route path="/ModalPopup" element={<Modal isOpen={isModalOpen} onClose={closeModal} />} />
+                        <Route path="/ApiCall" element={<ApiCall />} />
+
 
 
                     </Routes>
