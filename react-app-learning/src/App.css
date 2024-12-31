@@ -88,3 +88,7 @@
   grid-column: span 3 / span 3;
 }
 .form-control div label{padding-right: 10px;}
+
+.paginamtion-btn button{
+  border:1px solid #ccc; cursor: pointer; background-color: gray; padding: 10px 20px; color: #fff; margin: 0 10px; border-radius: 4px;
+}

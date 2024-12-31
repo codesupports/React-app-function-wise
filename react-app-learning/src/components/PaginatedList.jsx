@@ -10,6 +10,7 @@ const PaginatedList = () => {
         setCurrentPage(pageNumber)
     }
     const currentItems = items.slice((currentPage - 1) * itemPerpage, currentPage * itemPerpage)
+    
     return (
         <>
             <div>
