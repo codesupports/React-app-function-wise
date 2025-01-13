@@ -11,6 +11,7 @@ import PaginatedList from './PaginatedList'
 import Modal from './Modal'
 import ApiCall from './ApiCall'
 import Accordian from './Accordian'
+import ShareMarketCalculator from './ShareMarketCalculator '
 
 
 
@@ -51,6 +52,8 @@ const Home = () => {
                             <li><Link to="/ModalPopup" onClick={openModal}>Modal Popup </Link></li>
                             <li><Link to="/ApiCall" >ApiCall </Link></li>
                             <li><Link to="/Accordian" >Accordian </Link></li>
+                            <li><Link to="/Profit-Loss" >ShareMarketCalculator </Link></li>
+
 
                         </ul>
                     </nav>
@@ -67,8 +70,7 @@ const Home = () => {
                         <Route path="/ModalPopup" element={<Modal isOpen={isModalOpen} onClose={closeModal} />} />
                         <Route path="/ApiCall" element={<ApiCall />} />
                         <Route path="/Accordian" element={<Accordian />} />
-
-
+                        <Route path="/Profit-Loss" element={<ShareMarketCalculator/>} />
 
                     </Routes>
                 </div>
