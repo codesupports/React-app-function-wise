@@ -3,7 +3,8 @@ import useCounterCustomHooks from '../customHooks/useCounterCustomHooks' // impo
 
 const Counter = () => {
 
-   const {count, increment, deccrement}=  useCounterCustomHooks(2)
+   const {count, increment, deccrement}=  useCounterCustomHooks(1)
+   console.log("Component rendered")
 
     return (
         <>
@@ -12,9 +13,7 @@ const Counter = () => {
             <div>
                 <button onClick={increment}>+</button>
             </div>
-            <div>
-                Count: {count}
-            </div>
+            <div>Count: {count}</div>
             <div>
                 <button onClick={deccrement}>-</button>
             </div>

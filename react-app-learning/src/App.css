@@ -92,3 +92,68 @@
 .paginamtion-btn button{
   border:1px solid #ccc; cursor: pointer; background-color: gray; padding: 10px 20px; color: #fff; margin: 0 10px; border-radius: 4px;
 }
+
+      .expandable-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 16px 0;
+      }
+
+      .expandable-table th,
+      .expandable-table td {
+        border: 1px solid #ccc;
+        padding: 0;
+        text-align: center;
+
+      }
+
+      .expandable-table th {
+        background-color: #1976d2;
+        color: #fff;
+        font-weight: normal;
+        letter-spacing: 1px;
+      }
+      .flex-row{
+        display: flex;
+        flex: 1;
+      }
+      .flex-row div{
+        padding: 3px 10px;
+        border: 1px solid #ccc;
+        flex: 1;
+      }
+      .table-head1{
+        padding: 3px 10px;
+      }
+      .none{
+        display: none;
+      }
+
+.crud-table{
+  width: 100%;
+}
+.crud-table input{
+  padding: 8px;
+  margin: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.crud-table button{
+  padding: 8px 16px;
+  margin: 4px 8px;
+  border: none;
+  background-color: #1976d2;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.crud-table table{
+  width: 100%;
+  border-collapse: collapse;
+}
+.crud-table th,
+.crud-table td {
+  border: 1px solid #ccc;
+  padding: 4px;
+  text-align: left;
+}
